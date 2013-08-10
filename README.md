@@ -21,11 +21,11 @@ Find all elements with class "body-class" and id "body-id":
 
     (by-attribute test-html-tree {:class "body-class" :id "body-id"})
 
-Find all <div> elements:
+Find all &lt;div&gt; elements:
 
     (by-tag test-html-tree :div)
 
-Find all <div> elements with class "div1":
+Find all &lt;div&gt; elements with class "div1":
 
     (by-fn html-tree (fn [html-tree]
                        (and (= (tag html-tree) :div)
